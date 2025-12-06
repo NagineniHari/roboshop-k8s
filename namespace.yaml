@@ -1,0 +1,12 @@
+## Safety Project Namespace creation
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: safety  ## This one entire project
+  labels:
+    environment: development
+    project: safety
+
+
+
+## kubectl apply -f namespace.yaml
