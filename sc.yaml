@@ -1,0 +1,8 @@
+#3 K8s Admin will created storageclass
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: safety-ebs
+reclaimPolicy: Retain # default value is Delete
+provisioner: ebs.csi.aws.com
+volumeBindingMode: WaitForFirstConsumer
